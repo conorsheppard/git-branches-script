@@ -1,5 +1,7 @@
 #! /bin/bash
 
+COLUMNS=1
+
 while getopts ":g:" opt; do
    case $opt in
 		g) input="$OPTARG";;
@@ -18,8 +20,11 @@ fi
 num_branches=$1
 int_regex='^[0-9]+$'
 
-if ! [[ $num_branches =~ $int_regex ]]
-then
+if [[ -n "$input" && -n "$1" ]]; then
+	num_branches=$(($num_branches + 1))
+elif [[ -n "$input" && -z "$1" ]]; then
+	num_branches=11
+elif ! [[ $num_branches =~ $int_regex ]]; then
    num_branches=10
 fi
 
