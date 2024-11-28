@@ -4,14 +4,14 @@ Convenience script that prints a menu of recent git branches and allows you to s
 
 ### Setup
 
-Copy the script to a convenient location (e.g. alongside the `.gitconfig` file in your root directory)
+Make the script executable using `chmod +x branches.sh`.
 
-This can be done by executing:
+Copy and paste the command below into your terminal to move the script alongside your global `.gitconfig` file:
 ```bash
 cp branches.sh ~/branches.sh
 ```
 
-If you would like to run this script as a git alias, add the following alias to your `.gitconfig` file
+If you would like to run this script as a git alias, add the following alias to your `.gitconfig` file:
 ```bash
 [alias]
 ...
@@ -20,7 +20,6 @@ branches = "!f() { sh ~/branches.sh $1 $2 $3; };f"
 ```
 
 Then simply execute `git branches` in any repository to use the script.  
-Make the script executable using `chmod +x branches.sh` to run like this: `./branches`.
 
 ### Examples
 
