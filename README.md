@@ -1,6 +1,6 @@
 ### Overview
 
-Convenience script that prints a menu of recent git branches and allows you to switch branches by selecting its corresponding number
+Convenience script that prints a menu of recent git branches and allows you to switch branches by selecting their corresponding number
 
 ### Setup
 
@@ -43,3 +43,5 @@ Please note that although the above two _can_ be used in conjunction, the number
 ```bash
 ./branches.sh -g fix 100
 ```
+
+https://github.com/user-attachments/assets/af94ed4c-d696-496b-b2dc-93a7a19edf59
